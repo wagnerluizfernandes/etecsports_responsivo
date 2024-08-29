@@ -1,0 +1,245 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    background-color: #000000;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #ececec;
+}
+
+#logo i {
+    font-size: 40px;
+}
+
+#logo p {
+    font-size: 26px;
+}
+
+#navegacao nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#navegacao nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #ececec;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: all 1s ease;
+}
+
+#navegacao nav a i {
+    font-size: 25px;
+}
+
+#navegacao nav a p {
+    font-size: 10px;
+}
+
+#navegacao nav a:hover {
+    color: #ffcc00;
+    border-top: 2px solid #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+}
+
+#redessociais nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+#redessociais nav a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    text-decoration: none;
+    color: #ececec;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: all 1s ease;
+}
+
+#redessociais nav a:hover {
+    color: #ffcc00;
+    border-top: 2px solid #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+}
+
+#redessociais nav a i {
+    font-size: 28px;
+}
+
+#redessociais nav a p {
+    font-size: 10px;
+}
+
+#contato nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#contato nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    color: #ececec;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+#contato nav a:hover {
+    color: #ffcc00;
+}
+
+#contato nav a i {
+    font-size: 30px;
+}
+
+#contato nav a p {
+    font-size: 10px;
+}
+
+#entrar button {
+    background-color: #000000;
+    height: 40px;
+    width: 100px;
+    border: 2px solid #ececec;
+    border-radius: 5px;
+    color: #ececec;
+    font-size: 16px;
+    transition: all 1s ease;
+}
+
+#entrar button:hover {
+    background-color: #ececec;
+    border: 2px solid #ececec;
+    border-radius: 5px;
+    color: #000000;
+}
+
+/* Estilos responsivos */
+
+/* Para telas menores que 768px (tablets e celulares em orientação retrato) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    #logo {
+        margin-bottom: 10px;
+    }
+
+    #navegacao nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #navegacao nav a {
+        font-size: 14px;
+    }
+
+    #redessociais nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #redessociais nav a {
+        font-size: 14px;
+    }
+
+    #contato nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #contato nav a {
+        font-size: 14px;
+    }
+
+    #entrar button {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+/* Para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    #logo i {
+        font-size: 30px;
+    }
+
+    #logo p {
+        font-size: 20px;
+    }
+
+    #navegacao nav a i {
+        font-size: 20px;
+    }
+
+    #navegacao nav a p {
+        font-size: 8px;
+    }
+
+    #redessociais nav a i {
+        font-size: 24px;
+    }
+
+    #redessociais nav a p {
+        font-size: 8px;
+    }
+
+    #contato nav a i {
+        font-size: 24px;
+    }
+
+    #contato nav a p {
+        font-size: 8px;
+    }
+
+    #entrar button {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+    }
+}
